@@ -1,0 +1,51 @@
+// colors
+$red: #FF0021;
+$red-dark: #961737;
+$grey: #2EE22E;
+$white: #FFFFFF;
+$black: #000000;
+$blue: #2598FF;
+
+// main size
+$vw: 3840;
+@function vw($size) {
+  $vw-context: $vw * 0.01 * 1px;
+  @return calc($size / $vw-context * 1vw);
+}
+
+// sizes
+$pad: vw(40px); // 0.521vw;
+$headerH: 20.370vh; // 440px;
+$vh: 100vh; // 2160px;
+$timeH: vw(180px); // 2.344vw;
+$timeImageH: vw(100px); // 1.302vw;
+$txtTimeH: vw(50px); // 0.651vw;
+$colTimeTxtW: vw(534px); // 6.953vw;
+$colTimeStatusW: vw(240px); // 3.125vw;
+$colTimeResultW: vw(126px); // 1.641vw;
+$mainImageOneTop: vw(444px); // 5.781vw;
+$mainImageOneRight: vw(1259px); // 16.393vw;
+$mainImageTwoLeft: vw(354px); // 4.609vw;
+$mainTitleRight: vw(350px); // 3.229vw;
+$mainTitleBottom: vw(699px);
+$mainColImage: vw(158px); // 2.057vw;
+$mainLogoW: vw(916px); // 0.625vw;
+$mainLogoTop: vw(152px); // 1.979vw;
+$mainBottomColRight: vw(48px);
+$mainQRLeft: vw(1664px);
+$mainQRBottom: vw(226px);
+$mainQRImage: vw(515px);
+$mainQRImageRight: vw(70px);
+$typeRightImage: vw(1044px);
+$typeRightImageH: vw(680px);
+$typeRightWBlock: vw(349.28px);
+$typeRightHBlock: vw(681.22px);
+$typeCenterImageW: vw(1389px);
+$typeCenterImageH: vw(781px);
+$typeLeftImage: vw(1859px);
+
+// font-sizes
+$h1: vw(170px); // 2.214vw;
+$h2: vw(140px); // 1.823vw;
+$h3: vw(72px); // 0.938vw;
+$h4: vw(36px); // 0.469vw;

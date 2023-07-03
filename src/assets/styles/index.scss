@@ -1,0 +1,54 @@
+@import "_variables";
+@import "_fonts";
+@import "_reset";
+
+.row{
+	box-sizing: border-box;
+	display: flex;
+	padding: 0 $pad;
+	width: 100%;
+}
+
+.col{
+	box-sizing: border-box;
+	padding: 0;
+	width: 33.3333%;
+}
+
+.time{
+	align-items: center;
+	box-sizing: border-box;
+	padding: $pad;
+	display: flex;
+	height: $timeH;
+	& img {
+		margin-right: $pad;
+		height: auto;
+		width: $timeImageH;
+	}
+}
+
+.txt-time{
+	font-size: $txtTimeH;
+	line-height: 100%;
+	text-transform: uppercase;
+}
+
+.col-time{
+	&-txt{
+		margin-right: $pad;
+		height: 100%;
+		width: $colTimeTxtW;
+	}
+	&-status{
+		font-size: $h4;
+		line-height: 90%;
+		text-transform: lowercase;
+		margin-right: $pad;
+		height: 100%;
+		width: $colTimeStatusW;
+	}
+	&-result{
+		width: $colTimeResultW;
+	}
+}
